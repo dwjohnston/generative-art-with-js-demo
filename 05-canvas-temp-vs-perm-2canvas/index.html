@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <script src="./index.js"></script>
+    <style>
+        canvas {
+            border: dashed 1px black;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        body {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        #canvasContainer {
+            width: 400;
+            height: 400;
+            position: relative;
+        }
+
+        #canvasTemp {
+            z-index: 10;
+        }
+
+        #text {
+            font-weight: bold;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> Canvas Optimsations - render off screen</h1>
+        <div id="canvasContainer">
+            <canvas id="canvasTemp" width="400" height="400"></canvas>
+            <canvas id="canvasPerm" width="400" height="400"></canvas>
+        </div>
+
+    </div>
+    <div>
+        <p id="text">ready</p>
+        <button id="myButton"> click me </button>
+    </div>
+</body>
+
+</html>
