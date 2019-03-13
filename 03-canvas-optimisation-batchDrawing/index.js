@@ -32,29 +32,39 @@ document.addEventListener('DOMContentLoaded', () => {
         let columnCount = 0;
 
 
-        const gradient = context.createLinearGradient(0, 0, 0, canvas.height);
-        gradient.addColorStop(0, "white");
-        gradient.addColorStop(1, "black");
-        context.fillStyle = gradient;
+        // const gradient = context.createLinearGradient(0, 0, 0, canvas.height);
+        // gradient.addColorStop(0, "white");
+        // gradient.addColorStop(1, "black");
+        // context.fillStyle = gradient;
+        // function drawFrame() {
 
+        //     context.beginPath();
+        //     for (let i = 0; i < nDots; i++) {
+        //         context.moveTo(columnCount * dotGap, i * dotGap);
+        //         context.ellipse(columnCount * dotGap, i * dotGap, dotSize, dotSize, 0, 0, Math.PI * 2);
+        //     }
 
+        //     context.fill();
+        //     columnCount++;
+
+        //     if (columnCount > maxColumns) {
+        //         cancelAnimationFrame();
+        //     }
+        //     requestAnimationFrame(drawFrame);
+        // }
+
+        //Don't do this
         function drawFrame() {
-
-            context.beginPath();
             for (let i = 0; i < nDots; i++) {
-                // const value = Math.floor(255 * (i / nDots));
-                // context.fillStyle = `rgb(${value}, ${value}, ${value})`;
+                const value = Math.floor(255 * (i / nDots));
+                context.fillStyle = `rgb(${value}, ${value}, ${value})`;
 
-
-
-                //context.beginPath();
+                context.beginPath();
                 context.moveTo(columnCount * dotGap, i * dotGap);
                 context.ellipse(columnCount * dotGap, i * dotGap, dotSize, dotSize, 0, 0, Math.PI * 2);
-                //context.fill();
+                context.fill();
 
             }
-
-            context.fill();
             columnCount++;
 
             if (columnCount > maxColumns) {

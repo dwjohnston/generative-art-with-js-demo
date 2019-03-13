@@ -32,6 +32,9 @@ function drawSnake(context) {
 
 }
 let temp, perm;
+
+
+//These are functions p5 looks for
 function setup() {
     createCanvas(400, 400);
     stroke(50); // Set line drawing color to white
