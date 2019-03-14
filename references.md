@@ -14,6 +14,10 @@ https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API#Libraries
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas
 
+### Optimisation
+
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas
+
 ### Color blend modes:
 
 https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing
